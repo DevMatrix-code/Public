@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kniffel</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+   
+          <div id="rectangle">
+            <table id="table1">
+              <tr>
+                <td></td>
+                <td>Max. Punkte</td>
+                <td>Player1</td>
+                <td>Player2</td>
+              </tr>
+              <tr>
+                <td>1er  <img class="Task-Picture"  src="1.jpg"><img class="Task-Picture"  src="1.jpg"><img class="Task-Picture"  src="1.jpg"> </td>
+                <td>Nur 1er</td>
+                <td id="P1P1" onclick="change(1,'P1P1',0)">Punkte</td>
+                <td id="P2P1" onclick="change(1,'P2P1',1)">Punkte</td>
+              </tr> 
+              <tr>
+                <td>2er  <img class="Task-Picture"  src="2.jpg"><img class="Task-Picture"  src="2.jpg"><img class="Task-Picture"  src="2.jpg"></td>
+                <td>Nur 2er </td>
+                <td id="P1P2" onclick="change(2,'P1P2',0)">Punkte</td>
+                <td id="P2P2" onclick="change(2,'P2P2',1)">Punkte</td>
+              </tr>
+              <tr>
+                <td>3er  <img class="Task-Picture"  src="3.jpg"><img class="Task-Picture"  src="3.jpg"><img class="Task-Picture"  src="3.jpg"></td>
+                <td>Nur 3er</td>
+                <td id="P1P3" onclick="change(3,'P1P3',0)">Punkte</td>
+                <td id="P2P3" onclick="change(3,'P2P3',1)">Punkte</td>
+              </tr>
+              <tr>
+                <td>4er  <img class="Task-Picture"  src="4.jpg"><img class="Task-Picture"  src="4.jpg"><img class="Task-Picture"  src="4.jpg"></td>
+                <td>Nur 4er</td>
+                <td id="P1P4" onclick="change(4,'P1P4',0)">Punkte</td>
+                <td id="P2P4" onclick="change(4,'P2P4',1)">Punkte</td>
+              </tr> 
+              <tr>
+                <td>5er  <img class="Task-Picture"  src="5.jpg"><img class="Task-Picture"  src="5.jpg"><img class="Task-Picture"  src="5.jpg"></td>
+                <td>Nur 5er</td>
+                <td id="P1P5" onclick="change(5,'P1P5',0)">Punkte</td>
+                <td id="P2P5" onclick="change(5,'P2P5',1)">Punkte</td>
+              </tr>
+              <tr>
+                <td>6er  <img class="Task-Picture"  src="6.jpg"><img class="Task-Picture"  src="6.jpg"><img class="Task-Picture"  src="6.jpg"></td>
+                <td>Nur 6er</td>
+                <td id="P1P6" onclick="change(6,'P1P6',0)">Punkte</td>
+                <td id="P2P6" onclick="change(6,'P2P6',1)">Punkte</td>
+              </tr>
+              <tr>
+                <td>Gesammt </td>
+                <td>--------------></td>
+                <td id="All1">0</td>
+                <td id="All2">0</td>
+              </tr>
+              <tr>
+                <td>Bonus bei 63 oder mehr</td>
+                <td>plus 35</td>
+                <td ></td>
+                <td ></td>
+              </tr>
+              <tr>
+                <td>Gesammter Obererteil</td>
+                <td>--------------></td>
+                <td id="All11"></td>
+                <td id="All12"></td>
+              </tr>
+            </table>
+          </div>
+
+           <input type="number" name="" oninput="Test()"id="ijusrg">
+          <button onclick="Debug()">Debug Info</button>
+    
+  
+        
+     
+    
+
+
+
+      <table>
+        <tr> 
+          <td id="würfel1" onclick="Würfel('1')"><img id="img1" src="1.jpg" alt="Bild 1" data-info=1>></td>
+          <td id="würfel2" onclick="Würfel('2')"><img id="img2" src="1.jpg" alt="Bild 1" data-info=1>></td>
+          <td id="würfel3" onclick="Würfel('3')"><img id="img3" src="1.jpg" alt="Bild 1" data-info=1>></td>
+          <td id="würfel4" onclick="Würfel('4')"><img id="img4" src="1.jpg" alt="Bild 1" data-info=1>></td>
+          <td id="würfel5" onclick="Würfel('5')"><img id="img5" src="1.jpg" alt="Bild 1" data-info=1>></td>
+          <td><button id="Click" onclick="Run()">Click to Roll</button></td>
+        </tr>
+      </table>
+    
+
+</body>
+</html>
